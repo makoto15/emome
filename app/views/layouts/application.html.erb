@@ -7,9 +7,29 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
+    <header class="main-header">
+        <div><a href="#" class="main-header__brand">EMOMe</a></div>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="#">What's EMOMe</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Members</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">News</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <%= yield %>
   </body>
 </html>
